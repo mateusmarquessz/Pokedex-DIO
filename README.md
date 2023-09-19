@@ -1,4 +1,4 @@
-#Pokédex Online com a PokeAPI
+## Pokédex Online com a PokeAPI
 
 Bem-vindo ao Pokédex Online! Esta é uma aplicação web que permite aos usuários explorar informações detalhadas sobre diferentes Pokémon usando a PokeAPI como fonte de dados. Você pode pesquisar por nome, descobrir tipos, habilidades, estatísticas e muito mais.
 

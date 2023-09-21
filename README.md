@@ -1,6 +1,8 @@
 ## Pokédex Online com a PokeAPI
 
-Bem-vindo ao Pokédex Online! Esta é uma aplicação web que permite aos usuários explorar informações detalhadas sobre diferentes Pokémon usando a PokeAPI como fonte de dados. Você pode pesquisar por nome, descobrir tipos, habilidades, estatísticas e muito mais.
+Bem-vindo esta e minha Pokédex! Esta aplicação web que permite aos usuários explorar informações detalhadas sobre diferentes Pokémon usando a PokeAPI como fonte de dados.
+
+Ela lista os pokemons, mais para frente prentendo adicionar a pesquisa alem de uma pagina para cada pokemons com suas informacoes mais detalhadas
 
 Tecnologias Utilizadas
 HTML5 e CSS3 para a estrutura e estilo da aplicação.

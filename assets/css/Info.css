@@ -61,19 +61,32 @@ table {
     border: none;
 }
 
-th, td {
+td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 4px 8px;
     text-align: left;
-}
-
-th {
-    background-color: #78C850;
-    color: white;
 }
 
 tbody:nth-child(odd) {
     background-color: #F0F0F0;
+}
+
+/* Reduzir o espaçamento entre as colunas */
+table td, table th {
+    border-right: none;
+}
+
+/* Adicionar espaçamento entre as colunas */
+table tr {
+    border-bottom: 8px solid transparent;
+}
+
+td.breeding {
+    width: 20%; 
+}
+
+td > h2{
+    font-size: 20px;
 }
 
 

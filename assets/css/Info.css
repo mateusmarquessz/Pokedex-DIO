@@ -1,0 +1,95 @@
+/* Estilos para a seção de conteúdo */
+.dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para o conteúdo interno da seção */
+.dados > div {
+    background-color: #6fac50;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Estilos para o número e nome do Pokémon */
+.numero {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Estilos para as habilidades do Pokémon */
+.Skill, .Skills {
+    display: inline-block;
+    background-color: #78C850;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Estilos para a imagem do Pokémon */
+.img-container {
+    margin-top: 10px; 
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Estilos para a tabela de informações */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #78C850;
+    color: white;
+}
+
+tbody:nth-child(odd) {
+    background-color: #F0F0F0;
+}
+
+
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}

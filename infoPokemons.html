@@ -21,25 +21,12 @@
 </head>
 <body>
     <!-- Botão para Sair -->
-    <button>
-        Sair
-    </button>
-   
+    <a href="javascript:history.back()" class="botao-sair">Sair</a>
     <!-- Conteúdo da Página -->
-    <section class="dados">
-        <div>
-            <!-- Número e Nome do Pokémon -->
-            <span class="numero">#001</span>
-            <h1>Bulbasaur</h1>
-    
-            <!-- Habilidades do Pokémon -->
-            <span class="Skill">Grass</span>
-            <span class="Skills">Poison</span>
-        <!-- Imagem do Pokémon -->
-            <div class="img-container">
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-            </div>
+    <section class="dados" id="pokemonInfo">
+         <!-- Dados -->
     </section>
+    
 
     <section class="Informacoes">
         <!-- Tabela de Informações -->
@@ -94,6 +81,7 @@
     <!-- Nossos Scripts -->
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/Info.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

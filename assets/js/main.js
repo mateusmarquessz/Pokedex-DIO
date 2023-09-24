@@ -49,3 +49,24 @@ loadMoreButton.addEventListener('click', () => {
 function expandPokemon(pokemonItem) {
     window.location.href = "infoPokemons.html";
 }
+
+// Adiciona um evento de escuta ao campo de busca
+document.getElementById('searchbar').addEventListener('input', function() {
+    search();
+});
+
+function search() {
+    let input = document.getElementById('searchbar').value.toLowerCase();
+    let pokemons = document.querySelectorAll('.pokemon');
+
+    pokemons.forEach(pokemon => {
+        let pokemonName = pokemon.querySelector('.name').innerText.toLowerCase();
+
+        // Verifica se o nome do Pokémon contém o texto digitado
+        if (!pokemonName.includes(input)) {
+            pokemon.style.display = 'none';
+        } else {
+            pokemon.style.display = 'list-item';
+        }
+    });
+}

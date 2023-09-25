@@ -7,25 +7,21 @@ let offset = 0;
 
 function convertPokemonToDados(pokemon) {
     return `
-    <div>
+    <div class="pokemon ${pokemon.type}" onclick="expandPokemon(this)">
         <span class="numero">#${pokemon.number}</span>
         <h1>${pokemon.name}</h1>
-
-        <span class="Skill">Grass</span>
-        <span class="Skills">Poison</span>
+        ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
         <div class="img-container">
             <img src="${pokemon.photo}" alt="${pokemon.name}">
         </div>
     `;
 }
 
-function loadPokemonItens(offset = 1, limit = 1) {
+function loadPokemonItens(offset, limit ) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-        if (pokemons.length > 0) {
-            const pokemon = pokemons[0];
+            const pokemon = pokemons[1];
             const pokemonInfoHTML = convertPokemonToDados(pokemon);
             document.getElementById("pokemonInfo").innerHTML = pokemonInfoHTML;
-        }
     });
 }
 

@@ -7,7 +7,7 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}" onclick="expandPokemon(this)">
+        <li id="pokemonList" class="pokemon ${pokemon.type}" onclick="expandPokemon(this)">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
@@ -46,11 +46,10 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
-function expandPokemon(pokemonItem) {
+function expandPokemon() {
     window.location.href = "infoPokemons.html";
 }
 
-// Adiciona um evento de escuta ao campo de busca
 document.getElementById('searchbar').addEventListener('input', function() {
     search();
 });
@@ -61,8 +60,6 @@ function search() {
 
     pokemons.forEach(pokemon => {
         let pokemonName = pokemon.querySelector('.name').innerText.toLowerCase();
-
-        // Verifica se o nome do Pokémon contém o texto digitado
         if (!pokemonName.includes(input)) {
             pokemon.style.display = 'none';
         } else {

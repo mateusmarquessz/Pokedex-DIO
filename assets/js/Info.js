@@ -17,12 +17,14 @@ function convertPokemonToDados(pokemon) {
     `;
 }
 
-function loadPokemonItens(offset, limit ) {
-    pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-            const pokemon = pokemons[1];
+function loadPokemonItens() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    pokeApi.getPokemomById(id).then((pokemon) => {
             const pokemonInfoHTML = convertPokemonToDados(pokemon);
             document.getElementById("pokemonInfo").innerHTML = pokemonInfoHTML;
     });
 }
 
-loadPokemonItens(offset, limit)
+loadPokemonItens()

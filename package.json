@@ -1,4 +1,5 @@
 {
+  "name": "Criando um Projeto com HTML e CSS para Listagem de Pokemon",
   "dependencies": {
     "normalize.css": "^8.0.1"
   }

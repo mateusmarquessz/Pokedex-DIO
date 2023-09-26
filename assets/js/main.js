@@ -7,7 +7,7 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li id="pokemonList" class="pokemon ${pokemon.type}" onclick="expandPokemon(this)">
+        <li id="pokemonList" class="pokemon ${pokemon.type}" onclick="expandPokemon(${pokemon.number})">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
@@ -46,8 +46,8 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
-function expandPokemon() {
-    window.location.href = "infoPokemons.html";
+function expandPokemon(number) {
+    window.location.href = `infoPokemons.html?id=${number}`;
 }
 
 document.getElementById('searchbar').addEventListener('input', function() {

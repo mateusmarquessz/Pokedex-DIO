@@ -48,9 +48,9 @@ h1 {
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 5px;
 }
 /* Estilos para a tabela de informações */

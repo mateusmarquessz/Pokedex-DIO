@@ -14,7 +14,7 @@ function convertPokemonToDados(pokemon) {
         <div class="img-container">
             <img src="${pokemon.photo}" alt="${pokemon.name}">
         </div>
-    `;
+        `;
 }
 
 function loadPokemonItens() {

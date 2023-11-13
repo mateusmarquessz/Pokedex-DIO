@@ -9,15 +9,15 @@ function convertPokemonToCaract(pokemon) {
                 </tr>
                 <tr>
                     <td>Height</td>
-                    <td></td>
+                    <td>${pokemon.height}</td>
                 </tr>
                 <tr>
                     <td>Weight</td>
-                    <td></td>
+                    <td>${pokemon.weight}</td>
                 </tr>
                 <tr>
                     <td>Abilities</td>
-                    <td></td>
+                    <td>${pokemon.abilities}</td>
                 </tr>
                 <tr>
                     <td class="breeding"><h2>Breeding</h2></td>
@@ -25,15 +25,15 @@ function convertPokemonToCaract(pokemon) {
                 </tr>
                 <tr>
                     <td>Gender</td>
-                    <td>a</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Egg Groups</td>
-                    <td>${pokemon.name}</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Egg Cycle</td>
-                    <td>a</td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
